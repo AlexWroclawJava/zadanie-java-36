@@ -1,7 +1,6 @@
 public class Test {
 
     public static void main(String[] args) {
-
         Line2D line2D = new Line2D(new Point2D(1,3), new Point2D(4,7));
         Circle circle = new Circle(5);
         Rectangle rectangle = new Rectangle(3, 4);
