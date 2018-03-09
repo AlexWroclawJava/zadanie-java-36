@@ -1,16 +1,21 @@
-public class Circle {
+public class Circle extends GeometricShape {
 
-    int promien;
+    int radius;
 
-    public Circle(int promien) {
-        this.promien = promien;
+    public Circle(int radius) {
+        this.radius = radius;
     }
 
-    public int getPromien() {
-        return promien;
+    public int getRadius() {
+        return radius;
     }
 
-    public void setPromien(int promien) {
-        this.promien = promien;
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double area() {
+        return Math.PI * Math.pow(radius, 2);
     }
 }

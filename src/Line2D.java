@@ -1,17 +1,15 @@
-public class Line2D {
+public class Line2D extends Shape2D{
 
+    public Point2D beginning;
+    public Point2D ending;
 
-    public int getOdcinek() {
-        return odcinek;
+    public Line2D(Point2D beginning, Point2D ending) {
+        this.beginning = beginning;
+        this.ending = ending;
     }
 
-    public Line2D(int odcinek) {
-        this.odcinek = odcinek;
+    @Override
+    public double area() {
+        return 0;
     }
-
-    public void setOdcinek(int odcinek) {
-        this.odcinek = odcinek;
-    }
-
-    private int odcinek;
 }

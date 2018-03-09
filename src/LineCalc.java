@@ -1,19 +1,7 @@
 public class LineCalc {
 
-    private int dlugosc;
-
-    public LineCalc(int dlugosc) {
-        this.dlugosc = dlugosc;
-    }
-
-    public int lineLength(Line2D);
-    return dlugosc;
-
-    public int getDlugosc() {
-        return dlugosc;
-    }
-
-    public void setDlugosc(int dlugosc) {
-        this.dlugosc = dlugosc;
+    public double lineLength(Line2D line2D){
+        return  Math.sqrt( Math.pow(line2D.ending.x - line2D.beginning.x, 2)  +
+                Math.pow(line2D.ending.y - line2D.beginning.y, 2));
     }
 }
